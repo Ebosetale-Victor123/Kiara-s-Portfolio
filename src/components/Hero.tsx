@@ -59,20 +59,30 @@ export default function Hero({ onDownloadCV }: HeroProps) {
           {/* Contact chips */}
           <div className="flex flex-wrap justify-center md:justify-start gap-3 mb-8">
             {[
-              { icon: MapPin, text: personal.location },
-              { icon: Phone, text: personal.phone },
-              { icon: Mail,  text: personal.email   },
-            ].map(({ icon: Icon, text }) => (
-              <div key={text}
-                className="flex items-center gap-1.5 text-xs sm:text-sm
-                           text-slate-600 dark:text-slate-400
-                           bg-white dark:bg-white/5
-                           border border-amber-200 dark:border-white/10
-                           px-3 py-1.5 rounded-full shadow-sm dark:shadow-none">
-                <Icon size={13} className="text-amber-500 dark:text-amber-400 flex-shrink-0" />
-                <span className="truncate max-w-[180px]">{text}</span>
-              </div>
-            ))}
+              { icon: MapPin, text: personal.location, href: undefined },
+              { icon: Phone,  text: personal.phone,    href: `tel:${personal.phone}` },
+              { icon: Mail,   text: personal.email,    href: `mailto:${personal.email}` },
+            ].map(({ icon: Icon, text, href }) => {
+              const chipCls = [
+                'flex items-center gap-1.5 text-xs sm:text-sm',
+                'text-slate-600 dark:text-slate-400',
+                'bg-white dark:bg-white/5',
+                'border border-amber-200 dark:border-white/10',
+                'px-3 py-1.5 rounded-full shadow-sm dark:shadow-none',
+                href ? 'hover:text-amber-600 dark:hover:text-amber-400 hover:border-amber-300 dark:hover:border-amber-400/40 transition-colors duration-200 cursor-pointer' : '',
+              ].join(' ')
+              const inner = (
+                <>
+                  <Icon size={13} className="text-amber-500 dark:text-amber-400 flex-shrink-0" />
+                  <span className="truncate max-w-[220px]">{text}</span>
+                </>
+              )
+              return href ? (
+                <a key={text} href={href} className={chipCls}>{inner}</a>
+              ) : (
+                <div key={text} className={chipCls}>{inner}</div>
+              )
+            })}
           </div>
 
           {/* CTAs */}
