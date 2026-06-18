@@ -20,14 +20,14 @@ export default function Hero({ onDownloadCV }: HeroProps) {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-amber-300/5 dark:bg-slate-700/20 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-10 lg:gap-16 items-center pt-24 sm:pt-28 pb-16">
+      <div className="relative z-10 max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-10 lg:gap-16 items-center pt-24 sm:pt-28 pb-44 sm:pb-16">
 
         {/* ── Text ── */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="order-2 md:order-1 text-center md:text-left"
+          className="order-2 md:order-1 text-justify md:text-left"
         >
           <motion.span
             initial={{ opacity: 0, y: 10 }}
@@ -42,17 +42,17 @@ export default function Hero({ onDownloadCV }: HeroProps) {
             Open to opportunities
           </motion.span>
 
-          <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
+          <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 text-justify md:text-left">
             <span className="text-slate-900 dark:text-white">{personal.name.split(' ')[0]} </span>
             <span className="text-gradient">
               {personal.name.split(' ').slice(1).join(' ')}
             </span>
           </h1>
 
-          <p className="text-amber-600 dark:text-amber-400 font-semibold text-lg mb-2">
+          <p className="text-amber-600 dark:text-amber-400 font-semibold text-lg mb-2 text-justify md:text-left">
             {personal.headline}
           </p>
-          <p className="text-slate-500 dark:text-slate-400 text-base mb-8 max-w-md mx-auto md:mx-0">
+          <p className="text-slate-500 dark:text-slate-400 text-base mb-8 md:max-w-md text-justify md:text-left">
             {personal.tagline}
           </p>
 
@@ -143,7 +143,7 @@ export default function Hero({ onDownloadCV }: HeroProps) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.4 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1"
+        className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1"
       >
         <span className="text-[10px] text-slate-400 dark:text-slate-600 tracking-widest uppercase">scroll</span>
         <motion.div

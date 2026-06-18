@@ -27,7 +27,7 @@ export default function SectionHeading({ label, title, subtitle }: SectionHeadin
         {title}
       </h2>
       {subtitle && (
-        <p className="text-slate-500 dark:text-slate-400 max-w-xl mx-auto text-sm sm:text-base px-4">
+        <p className="text-slate-500 dark:text-slate-400 max-w-xl mx-auto text-sm sm:text-base px-4 text-justify sm:text-center">
           {subtitle}
         </p>
       )}

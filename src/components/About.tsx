@@ -24,10 +24,10 @@ export default function About() {
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-base sm:text-lg mb-5">
+            <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-base sm:text-lg mb-5 text-justify sm:text-left">
               {summary}
             </p>
-            <p className="text-slate-500 dark:text-slate-400 leading-relaxed text-sm sm:text-base">
+            <p className="text-slate-500 dark:text-slate-400 leading-relaxed text-sm sm:text-base text-justify sm:text-left">
               Based in Lagos, Nigeria, I'm actively pursuing opportunities in AI data annotation,
               content review, and quality-assurance roles where precision and consistency are
               paramount. I'm committed to continuous growth at the intersection of technology
