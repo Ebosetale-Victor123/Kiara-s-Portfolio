@@ -36,19 +36,9 @@ export type ExperienceItem = {
 
 export const experience: ExperienceItem[] = [
   {
-    role: 'Social Media Manager',
-    company: 'Emerie Clothing Brand',
-    period: '',
-    bullets: [
-      'Managed daily social media operations, planning and scheduling content across all brand platforms to keep a consistent posting rhythm.',
-      'Grew audience engagement by responding to comments and messages, building community, and tracking what content performed best.',
-      'Maintained a cohesive brand voice and visual identity across every post, story, and campaign.',
-    ],
-  },
-  {
-    role: 'Content Strategist & Brand Support',
+    role: 'Social Media Manager and Content Strategist',
     company: 'Hwy Granola',
-    period: '',
+    period: '2026 – Present',
     bullets: [
       'Serve as Social Media Manager and Content Strategist for Hwy Granola, a granola brand, planning and scheduling content across its platforms.',
       'Developed the content strategy and campaign calendar around the brand\'s goals and target audience.',
@@ -56,13 +46,33 @@ export const experience: ExperienceItem[] = [
     ],
   },
   {
-    role: 'Founder & Head Chef',
+    role: 'Founder',
     company: "Kiara's Cravings",
-    period: '',
+    period: '2023 – Present',
     bullets: [
       'Founded and manage a Lagos-based food business, overseeing operations, customer service, marketing, and brand development.',
-      'Work as Head Chef overseeing kitchen operations, food preparation, quality control, and team coordination.',
-      'Also worked as Head Chef at The Farm Restaurant (2025), leading the kitchen team and maintaining food quality and service standards.',
+      'Built a loyal customer base through consistent food quality, reliable service, and a recognisable brand.',
+      'Handle day-to-day business decisions, from menu and pricing to promotion, supplier coordination, and inventory.',
+    ],
+  },
+  {
+    role: 'Social Media Manager',
+    company: 'Emerie Clothing Brand',
+    period: '2024 – 2025',
+    bullets: [
+      'Managed daily social media operations, planning and scheduling content across all brand platforms to keep a consistent posting rhythm.',
+      'Grew audience engagement by responding to comments and messages, building community, and tracking what content performed best.',
+      'Maintained a cohesive brand voice and visual identity across every post, story, and campaign.',
+    ],
+  },
+  {
+    role: 'Head Chef',
+    company: 'The Farm Restaurant',
+    period: '2023 – 2025',
+    bullets: [
+      'Led the kitchen as Head Chef, overseeing daily kitchen operations, food preparation, and service.',
+      'Maintained food quality and safety standards through consistent quality control and portioning.',
+      'Coordinated and supervised the kitchen team, managing prep schedules and station assignments.',
     ],
   },
 ]
