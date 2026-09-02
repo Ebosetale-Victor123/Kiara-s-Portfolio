@@ -2,38 +2,29 @@
 // Update dates, graduation year, and social links here once you have them.
 
 export const personal = {
-  name: 'Kiara Mary Ehiri Ihechi',
-  headline: 'Video Annotation & Data Quality Specialist',
-  tagline: 'Precision-driven. Detail-obsessed. Ready to label the future.',
+  name: 'Anita Ehiri Ihechi',
+  headline: 'Social Media Manager · Content Strategist · Chef',
+  tagline: 'Creative. Organised. Passionate about building brands.',
   phone: '08072666768',
   email: 'anitaehiria@gmail.com',
   location: 'Lagos, Nigeria',
   photo: '/images/kiara-profile.jpg',
   linkedin: null as string | null,   // Replace null with your LinkedIn URL e.g. 'https://linkedin.com/in/yourname'
   instagram: null as string | null,  // Replace null with your Instagram URL
+  tiktok: 'https://www.tiktok.com/@kiaracravings_3' as string | null,
 }
 
 export const summary =
-  'Kiara Mary Ehiri Ihechi is a detail-driven Video Annotation and Data Quality Specialist with hands-on experience in content review, data labeling, and digital asset management. Adept at applying rigorous quality standards to ensure accuracy and consistency across diverse media formats, she brings a structured, methodical approach honed through brand support and social-media management roles. An entrepreneurially minded professional and founder of Kiara\'s Cravings, she combines operational discipline with strong communication skills — qualities that translate directly into high-precision AI data annotation workflows.'
+  'Anita Ehiri Ihechi is a Social Media Manager, Content Strategist, and entrepreneur based in Lagos, Nigeria. She has experience managing social media platforms, developing creative content, creating marketing strategies, and helping brands connect with their target audience. With a background in the food and hospitality industry, Anita has also worked as a Head Chef, where she gained experience in kitchen management, food preparation, quality control, and team coordination. She is also the founder of Kiara\'s Cravings, her food business in Lagos, which has strengthened her skills in business management, customer service, marketing, and brand development. Anita is creative, organised, adaptable, and passionate about building brands, creating meaningful content, and continuously developing her professional skills.'
 
-export type SkillGroup = {
-  category: string
-  skills: string[]
-}
-
-export const skillGroups: SkillGroup[] = [
-  {
-    category: 'Annotation & Quality',
-    skills: ['Video Annotation', 'Data Labeling', 'Quality Assurance', 'Content Review', 'Attention to Detail'],
-  },
-  {
-    category: 'Digital & Content',
-    skills: ['Social Media Management', 'Internet Research', 'Digital Asset Management'],
-  },
-  {
-    category: 'Professional & Collaboration',
-    skills: ['Communication Skills', 'Time Management', 'Microsoft Office', 'Team Collaboration'],
-  },
+export const skills: string[] = [
+  'Social Media Management',
+  'Content Strategy & Creation',
+  'Creative Problem-Solving',
+  'Leadership & Team Coordination',
+  'Communication & Customer Relations',
+  'Business & Brand Management',
+  'Time Management & Organisation',
 ]
 
 export type ExperienceItem = {
@@ -45,33 +36,33 @@ export type ExperienceItem = {
 
 export const experience: ExperienceItem[] = [
   {
-    role: 'Social Media Handler',
+    role: 'Social Media Manager',
     company: 'Emerie Clothing Brand',
-    period: '[Add Date Range]',
+    period: '',
     bullets: [
-      'Spearheaded daily social media operations, overseeing content scheduling, digital asset organisation, and audience engagement strategies.',
-      'Upheld rigorous content-accuracy standards by reviewing and categorising brand materials prior to publication across all managed platforms.',
-      'Streamlined digital workflows to ensure consistent, on-brand delivery — demonstrating the same precision and throughput discipline required in large-scale data annotation.',
+      'Managed daily social media operations, planning and scheduling content across all brand platforms to keep a consistent posting rhythm.',
+      'Grew audience engagement by responding to comments and messages, building community, and tracking what content performed best.',
+      'Maintained a cohesive brand voice and visual identity across every post, story, and campaign.',
     ],
   },
   {
-    role: 'Brand Support & Content Management',
-    company: 'Multiple Brands',
-    period: '[Add Date Range]',
+    role: 'Content Strategist & Brand Support',
+    company: 'Hwy Granola',
+    period: '',
     bullets: [
-      'Partnered with multiple brands to develop and curate digital content, maintaining strict attention to detail throughout the review and approval process.',
-      'Systematically organised and audited digital assets to ensure quality, consistency, and adherence to each brand\'s guidelines.',
-      'Delivered reliable content management support across diverse industries, demonstrating adaptability and precision under varied requirements.',
+      'Serve as Social Media Manager and Content Strategist for Hwy Granola, a granola brand, planning and scheduling content across its platforms.',
+      'Developed the content strategy and campaign calendar around the brand\'s goals and target audience.',
+      'Provide creative direction for photo and video content and manage the digital asset library, keeping everything consistent and on-brand.',
     ],
   },
   {
-    role: 'Founder & Owner',
+    role: 'Founder & Head Chef',
     company: "Kiara's Cravings",
-    period: '[Add Date Range]',
+    period: '',
     bullets: [
-      'Founded and independently managed a food business, overseeing all aspects of daily operations from order coordination to customer relations.',
-      'Demonstrated leadership and multitasking ability by single-handedly managing production schedules, inventory, and client communications.',
-      'Built and sustained a loyal customer base through consistent service quality, operational discipline, and strong attention to detail.',
+      'Founded and manage a Lagos-based food business, overseeing operations, customer service, marketing, and brand development.',
+      'Work as Head Chef overseeing kitchen operations, food preparation, quality control, and team coordination.',
+      'Also worked as Head Chef at The Farm Restaurant (2025), leading the kitchen team and maintaining food quality and service standards.',
     ],
   },
 ]
@@ -87,13 +78,13 @@ export const education: EducationItem[] = [
   {
     institution: 'Miva University',
     qualification: 'Entrepreneurship',
-    period: '[Add Start Year] – Present',
+    period: '2025 – Present',
     status: 'In Progress',
   },
   {
     institution: 'Our Lady of Apostles Secondary School',
     qualification: 'Secondary School Certificate',
-    period: '[Add Year]',
+    period: '2022',
   },
 ]
 
@@ -108,13 +99,13 @@ export type VideoItem = {
 
 export const videos: VideoItem[] = [
   {
-    title: 'Annotation Walkthrough Demo',
-    description: 'A step-by-step demonstration of video annotation techniques and labeling workflow.',
+    title: 'Content Campaign Walkthrough',
+    description: 'A step-by-step look at planning and building a social media content campaign from concept to schedule.',
     src: null,
   },
   {
-    title: 'Content Review Sample',
-    description: 'Showcasing the quality-control process applied to digital content review tasks.',
+    title: 'Brand Content Sample',
+    description: 'Showcasing creative content produced for a brand — from idea and direction to the finished post.',
     src: null,
   },
   {

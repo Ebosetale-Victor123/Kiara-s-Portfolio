@@ -5,10 +5,13 @@ import { cardGlass, sectionAlt } from '../utils/styles'
 import SectionHeading from './SectionHeading'
 
 const highlights = [
-  'Meticulous video annotation & frame-level labeling',
-  'Quality assurance across diverse media formats',
-  'Digital content management & brand support',
-  'Entrepreneurial mindset with leadership experience',
+  'Social Media Management',
+  'Content Strategy & Creation',
+  'Creative Problem-Solving',
+  'Leadership & Team Coordination',
+  'Communication & Customer Relations',
+  'Business & Brand Management',
+  'Time Management & Organisation',
 ]
 
 export default function About() {
@@ -28,10 +31,11 @@ export default function About() {
               {summary}
             </p>
             <p className="text-slate-500 dark:text-slate-400 leading-relaxed text-sm sm:text-base text-justify sm:text-left">
-              Based in Lagos, Nigeria, I'm actively pursuing opportunities in AI data annotation,
-              content review, and quality-assurance roles where precision and consistency are
-              paramount. I'm committed to continuous growth at the intersection of technology
-              and creative content.
+              Based in Lagos, Nigeria, I help brands grow through thoughtful social media
+              management, content strategy, and creative direction. Alongside my work in
+              digital content, I run my own food business and lead kitchens as a Head Chef.
+              I'm committed to continuous growth, building brands, and creating content that
+              connects with people.
             </p>
           </motion.div>
 

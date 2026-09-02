@@ -43,11 +43,8 @@ export default function Navigation({ dark, toggleTheme }: Props) {
     >
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
         {/* Logo */}
-        <a href="#hero" className="font-heading font-bold text-lg tracking-tight flex-shrink-0">
-          <span className="text-gradient">{personal.name.split(' ')[0]}</span>
-          <span className="text-slate-400 dark:text-slate-500 text-sm ml-1.5 font-normal hidden sm:inline">
-            {personal.headline}
-          </span>
+        <a href="#hero" className="font-heading font-bold tracking-tight flex-shrink-0">
+          <span className="text-gradient text-sm sm:text-base">{personal.headline}</span>
         </a>
 
         {/* Desktop links */}

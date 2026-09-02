@@ -1,4 +1,4 @@
-# Kiara Mary Ehiri Ihechi — Portfolio Website
+# Anita Ehiri Ihechi — Portfolio Website
 
 A modern professional portfolio and downloadable CV site built with React + Vite + TypeScript + Tailwind CSS.
 
@@ -43,7 +43,7 @@ To change it:
 1. Place `.mp4` files in `public/videos/`
 2. In `src/data/resume.ts`, find the `videos` array and set `src` to the path:
    ```ts
-   { title: 'Annotation Walkthrough Demo', src: '/videos/demo.mp4', ... }
+   { title: 'Content Campaign Walkthrough', src: '/videos/demo.mp4', ... }
    ```
    The player will appear automatically; if `src` is `null`, the placeholder card is shown.
 

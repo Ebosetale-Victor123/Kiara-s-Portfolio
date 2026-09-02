@@ -1,6 +1,14 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Send, Linkedin, Instagram, Download, Loader2, CheckCircle2, AlertCircle } from 'lucide-react'
+import { Mail, Phone, MapPin, Send, Download, Loader2, CheckCircle2, AlertCircle } from 'lucide-react'
+
+function TikTokIcon({ size = 17 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M16.5 3h-3v13.2a3.3 3.3 0 1 1-2.4-3.18V9.9a6.3 6.3 0 1 0 5.4 6.24V9.28a7.6 7.6 0 0 0 4.5 1.47V7.7a4.6 4.6 0 0 1-4.5-4.7Z" />
+    </svg>
+  )
+}
 import { personal } from '../data/resume'
 import { card, sectionPrimary } from '../utils/styles'
 import SectionHeading from './SectionHeading'
@@ -56,7 +64,7 @@ export default function Contact({ onDownloadCV }: ContactProps) {
         <SectionHeading
           label="Get in Touch"
           title="Contact"
-          subtitle="Available for freelance annotation projects, quality-assurance roles, and AI data-labeling contracts."
+          subtitle="Available for social media management, content strategy, and brand collaborations."
         />
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-10">
@@ -98,26 +106,15 @@ export default function Contact({ onDownloadCV }: ContactProps) {
             <div className={`${card} p-6 sm:p-7`}>
               <h3 className="font-heading font-semibold text-slate-900 dark:text-white text-sm uppercase tracking-wide mb-4">Connect</h3>
               <div className="flex flex-col gap-3">
-                {personal.linkedin ? (
-                  <a href={personal.linkedin} target="_blank" rel="noopener noreferrer"
+                {personal.tiktok ? (
+                  <a href={personal.tiktok} target="_blank" rel="noopener noreferrer"
                      className="flex items-center gap-3 text-slate-600 dark:text-slate-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors text-sm font-medium">
-                    <Linkedin size={17} /> LinkedIn
+                    <TikTokIcon size={17} /> TikTok
                   </a>
                 ) : (
                   <span className="flex items-center gap-3 text-slate-400 dark:text-slate-600 text-sm">
-                    <Linkedin size={17} />
-                    LinkedIn — <span className="text-amber-500/60 italic">[Add link in resume.ts]</span>
-                  </span>
-                )}
-                {personal.instagram ? (
-                  <a href={personal.instagram} target="_blank" rel="noopener noreferrer"
-                     className="flex items-center gap-3 text-slate-600 dark:text-slate-300 hover:text-amber-600 dark:hover:text-amber-400 transition-colors text-sm font-medium">
-                    <Instagram size={17} /> Instagram
-                  </a>
-                ) : (
-                  <span className="flex items-center gap-3 text-slate-400 dark:text-slate-600 text-sm">
-                    <Instagram size={17} />
-                    Instagram — <span className="text-amber-500/60 italic">[Add link in resume.ts]</span>
+                    <TikTokIcon size={17} />
+                    TikTok — <span className="text-amber-500/60 italic">[Add link in resume.ts]</span>
                   </span>
                 )}
               </div>

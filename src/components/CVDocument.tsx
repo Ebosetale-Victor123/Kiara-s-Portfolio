@@ -8,7 +8,7 @@ import {
 import {
   personal,
   summary,
-  skillGroups,
+  skills,
   experience,
   education,
 } from '../data/resume'
@@ -112,13 +112,6 @@ const styles = StyleSheet.create({
     color: C.sidebarText,
     flex: 1,
     lineHeight: 1.35,
-  },
-  skillGroupName: {
-    fontSize: 7.5,
-    fontFamily: 'Helvetica-Bold',
-    color: C.sidebarText,
-    marginTop: 9,
-    marginBottom: 5,
   },
   skillChipWrap: {
     flexDirection: 'row',
@@ -272,7 +265,7 @@ export default function CVDocument() {
       title={`${personal.name} — CV`}
       author={personal.name}
       subject={personal.headline}
-      creator="Kiara Portfolio"
+      creator="Anita Ehiri Ihechi Portfolio"
     >
       <Page size="A4" style={styles.page}>
 
@@ -306,16 +299,11 @@ export default function CVDocument() {
 
           {/* Skills */}
           <Text style={styles.sidebarSectionLabel}>Skills</Text>
-          {skillGroups.map((group) => (
-            <View key={group.category}>
-              <Text style={styles.skillGroupName}>{group.category}</Text>
-              <View style={styles.skillChipWrap}>
-                {group.skills.map((skill) => (
-                  <Text key={skill} style={styles.skillChip}>{skill}</Text>
-                ))}
-              </View>
-            </View>
-          ))}
+          <View style={styles.skillChipWrap}>
+            {skills.map((skill) => (
+              <Text key={skill} style={styles.skillChip}>{skill}</Text>
+            ))}
+          </View>
 
           <View style={styles.divider} />
 
@@ -340,7 +328,7 @@ export default function CVDocument() {
               <View key={`${job.role}-${job.company}`} style={styles.jobBlock}>
                 <View style={styles.jobTopRow}>
                   <Text style={styles.jobRole}>{job.role}</Text>
-                  <Text style={styles.jobPeriod}>{job.period}</Text>
+                  {job.period ? <Text style={styles.jobPeriod}>{job.period}</Text> : null}
                 </View>
                 <View style={styles.jobCompanyRow}>
                   <Text style={styles.jobCompany}>{job.company}</Text>

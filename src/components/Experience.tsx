@@ -11,7 +11,7 @@ export default function Experience() {
         <SectionHeading
           label="Work History"
           title="Professional Experience"
-          subtitle="A track record of precision, consistency, and content quality across multiple domains."
+          subtitle="A track record across social media, content strategy, and the food and hospitality industry."
         />
 
         <div className="relative">
@@ -47,13 +47,15 @@ export default function Experience() {
                         {job.company}
                       </p>
                     </div>
-                    <div className="flex items-center gap-1.5 text-slate-400 dark:text-slate-500 text-xs whitespace-nowrap
-                                    bg-amber-50 dark:bg-white/5
-                                    border border-amber-200 dark:border-white/8
-                                    px-3 py-1.5 rounded-full self-start">
-                      <Calendar size={12} />
-                      <span>{job.period}</span>
-                    </div>
+                    {job.period && (
+                      <div className="flex items-center gap-1.5 text-slate-400 dark:text-slate-500 text-xs whitespace-nowrap
+                                      bg-amber-50 dark:bg-white/5
+                                      border border-amber-200 dark:border-white/8
+                                      px-3 py-1.5 rounded-full self-start">
+                        <Calendar size={12} />
+                        <span>{job.period}</span>
+                      </div>
+                    )}
                   </div>
 
                   <ul className="space-y-2.5">

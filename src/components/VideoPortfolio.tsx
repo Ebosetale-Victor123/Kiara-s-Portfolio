@@ -17,7 +17,7 @@ export default function VideoPortfolio() {
         <SectionHeading
           label="Portfolio"
           title="Video Portfolio"
-          subtitle="Annotation walkthroughs, content review samples, and a personal introduction — videos coming soon."
+          subtitle="Content campaign walkthroughs, brand content samples, and a personal introduction videos coming soon."
         />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">

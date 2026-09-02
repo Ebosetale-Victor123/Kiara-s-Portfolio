@@ -12,7 +12,7 @@ export default function Footer() {
           {' '}· All rights reserved.
         </p>
         <p className="text-xs">
-          Video Annotation & Data Quality Specialist · {personal.location}
+          {personal.headline} · {personal.location}
         </p>
       </div>
     </footer>
