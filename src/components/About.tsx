@@ -27,10 +27,10 @@ export default function About() {
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-base sm:text-lg mb-5 text-justify sm:text-left">
+            <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-base sm:text-lg mb-5 text-justify md:text-left">
               {summary}
             </p>
-            <p className="text-slate-500 dark:text-slate-400 leading-relaxed text-sm sm:text-base text-justify sm:text-left">
+            <p className="text-slate-500 dark:text-slate-400 leading-relaxed text-sm sm:text-base text-justify md:text-left">
               Based in Lagos, Nigeria, I help brands grow through thoughtful social media
               management, content strategy, and creative direction. Alongside my work in
               digital content, I run my own food business and lead kitchens as a Head Chef.

@@ -62,7 +62,7 @@ export default function Experience() {
                     {job.bullets.map((bullet, bi) => (
                       <li key={bi} className="flex items-start gap-2.5">
                         <span className="w-1.5 h-1.5 rounded-full bg-amber-400 mt-2 flex-shrink-0" />
-                        <span className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                        <span className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed text-justify md:text-left">
                           {bullet}
                         </span>
                       </li>

@@ -130,6 +130,11 @@ export default function Hero({ onDownloadCV }: HeroProps) {
             <img
               src={personal.photo}
               alt="Anita Ehiri Ihechi"
+              width={288}
+              height={288}
+              loading="eager"
+              fetchPriority="high"
+              style={{ backgroundImage: `url(${personal.photoBlur})`, backgroundSize: 'cover', backgroundPosition: 'top center' }}
               className="relative w-52 h-52 sm:w-64 sm:h-64 lg:w-72 lg:h-72 object-cover object-top rounded-full
                          border-4 border-white dark:border-[#1e2535]
                          shadow-2xl shadow-amber-200/60 dark:shadow-black/40"

@@ -3,9 +3,10 @@ import { useState, useEffect } from 'react'
 export function useTheme() {
   const [dark, setDark] = useState(() => {
     if (typeof window === 'undefined') return true
+    // Always default to dark mode, regardless of OS preference — only an
+    // explicit prior toggle (saved in localStorage) overrides that default.
     const stored = localStorage.getItem('theme')
-    if (stored) return stored === 'dark'
-    return window.matchMedia('(prefers-color-scheme: dark)').matches
+    return stored ? stored === 'dark' : true
   })
 
   useEffect(() => {

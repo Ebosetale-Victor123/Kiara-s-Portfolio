@@ -8,7 +8,10 @@ export const personal = {
   phone: '08072666768',
   email: 'anitaehiria@gmail.com',
   location: 'Lagos, Nigeria',
-  photo: '/images/main.jpeg',
+  photo: '/images/main.webp',
+  // Tiny blurred stand-in shown behind the hero photo while it loads.
+  photoBlur:
+    'data:image/jpeg;base64,/9j//gAQTGF2YzYwLjMxLjEwMgD/2wBDAAgKCgsKCw0NDQ0NDRAPEBAQEBAQEBAQEBASEhIVFRUSEhIQEBISFBQVFRcXFxUVFRUXFxkZGR4eHBwjIyQrKzP/xACCAAACAwEBAAAAAAAAAAAAAAAHAgYBBAgDAQEBAQEBAAAAAAAAAAAAAAABAwACBBAAAgAEBQIEBQUBAAAAAAAAAQIABAMREyESIgUxkWEGMnFCQRWSUYMUU1TTUhEAAQMBCAEFAQAAAAAAAAAAAQACERJSYVPRMQMTIUEjoZGB8FH/wAARCAAbABQDASIAAhEAAxEA/9oADAMBAAIRAxEAPwAg1J+nXkXn5eXd6mEKmCRh1Wv8LZZWzv7Q/HVzNylCo+gO6amw74d7kbNW4r4mIHK+ZJ1H0lZM1HK3ZhVUu1rZDaB0vpEYDyM7xszXnxX1NMMA1Ksjiiqn0lNw9JBC3I2nobwVTPYv1VS1zYH907GaL64eYLAEGxvl8h+Ye1L/ALHcQIW8xclMEvhyJ+VwDnb9aF+t8l/FJdj/ALxuRmIz5XfDu2Xe2a1P5fmuOqq4rPNbX0IqG97WudzKAIi89J8vvatRdqdy1rioijxXqPE26we1igqvcMAfcRIuIEXoaY3eUgONNPekT4XNoSmPhAvmRc9e8XpT8DuYONfh+NxCf2lDPM7B1jw+kcb/AFKH2CGp1or3+nht/fS//9k=',
   linkedin: null as string | null,   // Replace null with your LinkedIn URL e.g. 'https://linkedin.com/in/yourname'
   instagram: null as string | null,  // Replace null with your Instagram URL
   tiktok: 'https://www.tiktok.com/@kiaracravings_3' as string | null,

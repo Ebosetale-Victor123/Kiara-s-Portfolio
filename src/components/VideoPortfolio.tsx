@@ -37,6 +37,8 @@ export default function VideoPortfolio() {
   const [containerWidth, setContainerWidth] = useState(0)
   const containerRef = useRef<HTMLDivElement>(null)
   const closeBtnRef = useRef<HTMLButtonElement>(null)
+  const touchStartX = useRef(0)
+  const touchEndX = useRef(0)
 
   // Measure the track's viewport so card width can be derived from real
   // pixels — keeps exactly `itemsPerView` cards visible at any window size.
@@ -81,6 +83,21 @@ export default function VideoPortfolio() {
   const prev = () => goTo(index === 0 ? maxIndex : index - 1)
   const next = () => goTo(index === maxIndex ? 0 : index + 1)
 
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.targetTouches[0].clientX
+    touchEndX.current = e.targetTouches[0].clientX
+  }
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.targetTouches[0].clientX
+  }
+  const handleTouchEnd = () => {
+    const diff = touchStartX.current - touchEndX.current
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) next()
+      else prev()
+    }
+  }
+
   const cardWidth = containerWidth > 0 ? (containerWidth - (itemsPerView - 1) * GAP) / itemsPerView : 0
   const offset = index * (cardWidth + GAP)
 
@@ -95,9 +112,12 @@ export default function VideoPortfolio() {
 
         <div
           ref={containerRef}
-          className="relative overflow-hidden"
+          className="relative overflow-hidden touch-pan-y"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
         >
           <motion.div
             className="flex"

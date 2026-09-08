@@ -62,19 +62,18 @@ export default function Navigation({ dark, toggleTheme }: Props) {
         </ul>
 
         {/* Right controls */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
           {/* Theme toggle */}
           <button
             onClick={toggleTheme}
             aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
-            className="w-9 h-9 flex items-center justify-center rounded-full
-                       bg-amber-100 dark:bg-white/10
-                       border border-amber-200 dark:border-white/10
-                       text-amber-600 dark:text-amber-400
-                       hover:bg-amber-200 dark:hover:bg-white/20
+            className="w-11 h-11 sm:w-9 sm:h-9 flex items-center justify-center rounded-full p-2
+                       bg-gray-800 border border-amber-400/50
+                       text-amber-400
+                       hover:bg-gray-700
                        transition-all duration-200"
           >
-            {dark ? <Sun size={16} /> : <Moon size={16} />}
+            {dark ? <Sun size={18} /> : <Moon size={18} />}
           </button>
 
           {/* Mobile hamburger */}
