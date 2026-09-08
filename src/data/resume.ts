@@ -8,7 +8,7 @@ export const personal = {
   phone: '08072666768',
   email: 'anitaehiria@gmail.com',
   location: 'Lagos, Nigeria',
-  photo: '/images/kiara-profile.jpg',
+  photo: '/images/main.jpeg',
   linkedin: null as string | null,   // Replace null with your LinkedIn URL e.g. 'https://linkedin.com/in/yourname'
   instagram: null as string | null,  // Replace null with your Instagram URL
   tiktok: 'https://www.tiktok.com/@kiaracravings_3' as string | null,
@@ -98,29 +98,48 @@ export const education: EducationItem[] = [
   },
 ]
 
-// To add a real video: place the .mp4 file in /public/videos/ and set its path here.
-// When src is null, the portfolio card shows a "coming soon" placeholder automatically.
 export type VideoItem = {
   title: string
   description: string
-  src: string | null
-  thumbnail?: string
+  src: string
+  mimeType: string
+  thumbnail: string
 }
 
 export const videos: VideoItem[] = [
   {
-    title: 'Content Campaign Walkthrough',
-    description: 'A step-by-step look at planning and building a social media content campaign from concept to schedule.',
-    src: null,
+    title: 'Behind the Kiara’s Cravings Brand',
+    description: 'A candid, personality-led clip building everyday brand awareness for Kiara’s Cravings.',
+    src: '/videos/IMG_1003_2.MOV',
+    mimeType: 'video/quicktime',
+    thumbnail: '/videos/thumbnails/IMG_1003_2.jpg',
   },
   {
-    title: 'Brand Content Sample',
-    description: 'Showcasing creative content produced for a brand — from idea and direction to the finished post.',
-    src: null,
+    title: 'Even My Business Has to Wait',
+    description: 'A granola taste-test moment for Hwy Granola that puts the product front and centre.',
+    src: '/videos/IMG_1004.MP4',
+    mimeType: 'video/mp4',
+    thumbnail: '/videos/thumbnails/IMG_1004.jpg',
   },
   {
-    title: 'Personal Introduction',
-    description: 'A brief video introduction covering my background, skills, and goals.',
-    src: null,
+    title: 'Not Every Fit Has to Try Too Hard',
+    description: 'An outdoor lifestyle reel for Emerie Clothing Brand, styled around effortless streetwear.',
+    src: '/videos/IMG_1005.MP4',
+    mimeType: 'video/mp4',
+    thumbnail: '/videos/thumbnails/IMG_1005.jpg',
+  },
+  {
+    title: 'Reviews Don’t Lie',
+    description: 'A customer testimonial filmed on the go, letting a real review speak for the product.',
+    src: '/videos/IMG_1006.MP4',
+    mimeType: 'video/mp4',
+    thumbnail: '/videos/thumbnails/IMG_1006.jpg',
+  },
+  {
+    title: 'Birthday Cake, Finished in Gold',
+    description: 'A close-up cake-decorating reveal, piped in chocolate and gold ribbon for a birthday celebration.',
+    src: '/videos/IMG_9399.MP4',
+    mimeType: 'video/mp4',
+    thumbnail: '/videos/thumbnails/IMG_9399.jpg',
   },
 ]

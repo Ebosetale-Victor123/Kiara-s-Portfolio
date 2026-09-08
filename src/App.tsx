@@ -6,6 +6,7 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Experience from './components/Experience'
 import VideoPortfolio from './components/VideoPortfolio'
+import ImagePortfolio from './components/ImagePortfolio'
 import Education from './components/Education'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -23,6 +24,7 @@ export default function App() {
         <Skills />
         <Experience />
         <VideoPortfolio />
+        <ImagePortfolio />
         <Education />
         <Contact onDownloadCV={downloadCV} />
       </main>
