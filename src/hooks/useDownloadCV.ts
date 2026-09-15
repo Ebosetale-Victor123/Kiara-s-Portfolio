@@ -1,30 +1,20 @@
-import { useState, createElement } from 'react'
+import { useState } from 'react'
 import { personal } from '../data/resume'
+
+// Static CV file — place the PDF in /public and update the filename here if it changes.
+const CV_FILE = '/Anita Ehiri Ihechi Official CV.pdf'
 
 export function useDownloadCV() {
   const [loading, setLoading] = useState(false)
 
-  const downloadCV = async () => {
+  const downloadCV = () => {
     if (loading) return
     setLoading(true)
     try {
-      // Lazy-load the heavy PDF renderer only when the user clicks Download
-      const [{ pdf }, { default: CVDocument }] = await Promise.all([
-        import('@react-pdf/renderer'),
-        import('../components/CVDocument'),
-      ])
-
-      const blob = await pdf(createElement(CVDocument)).toBlob()
-      const url = URL.createObjectURL(blob)
       const a = document.createElement('a')
-      a.href = url
+      a.href = encodeURI(CV_FILE)
       a.download = `${personal.name.replace(/ /g, '_')}_CV.pdf`
       a.click()
-      URL.revokeObjectURL(url)
-    } catch (err) {
-      console.error('PDF generation failed:', err)
-      const msg = err instanceof Error ? err.message : String(err)
-      alert(`PDF error: ${msg}`)
     } finally {
       setLoading(false)
     }

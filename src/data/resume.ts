@@ -92,7 +92,6 @@ export const education: EducationItem[] = [
     institution: 'Miva University',
     qualification: 'Entrepreneurship',
     period: '2025 – Present',
-    status: 'In Progress',
   },
   {
     institution: 'Our Lady of Apostles Secondary School',
