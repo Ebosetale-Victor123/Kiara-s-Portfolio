@@ -63,7 +63,7 @@ export const experience: ExperienceItem[] = [
     company: 'Emerie Clothing Brand',
     period: '2024 – 2025',
     bullets: [
-      'Managed daily social media operations, planning and scheduling content across all brand platforms to keep a consistent posting rhythm.',
+      'Served as a PA as well as managed daily social media operations, planning and scheduling content across all brand platforms to keep a consistent posting rhythm.',
       'Grew audience engagement by responding to comments and messages, building community, and tracking what content performed best.',
       'Maintained a cohesive brand voice and visual identity across every post, story, and campaign.',
     ],
